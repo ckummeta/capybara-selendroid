@@ -2,5 +2,5 @@
 <% android = "PLATFORM=ANDROID BROWSER_NAME=android" %>
 
 default: -p local
-local: -r features --tags ~@wip BROWSERE=IE SERVER=QA DEBUG=true
+local: -r features --tags ~@wip PLATFORM=WINDOWS BROWSERE=IE SERVER=QA DEBUG=true
 android: <%= default_opts %> <%= android %> SERVER=QA
