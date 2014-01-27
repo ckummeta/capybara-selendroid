@@ -1,0 +1,6 @@
+<% default_opts = "-r features --color --tags ~@wip --tags ~@unstable --tags ~@manual --tags ~@pending --format pretty" %>
+<% android = "PLATFORM=ANDROID BROWSER_NAME=android" %>
+
+default: -p local
+local: -r features --tags ~@wip BROWSERE=IE SERVER=QA DEBUG=true
+android: <%= default_opts %> <%= android %> SERVER=QA
